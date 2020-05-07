@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="14074d88-5ada-4470-af94-42fb026a09e0">
-        <schema name="optimal_route" object-types="view, table, column, index, dataset trigger, constraint, procedure, function" />
+        <schema name="optimal_route" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -36,6 +36,7 @@ select * from stations;
 select * from blpt;
 select * from buslines;
 select * from busline_list;
+drop table accounts;
 drop table stations;
 drop table blpt;
 drop table neighbors;

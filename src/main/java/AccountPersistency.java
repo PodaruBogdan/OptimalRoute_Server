@@ -1,9 +1,11 @@
 import optimal_route.contract.Account;
 import optimal_route.contract.IAccountPersistency;
+import optimal_route.contract.StationNode;
 import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.RollbackException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -34,6 +36,25 @@ public class AccountPersistency implements IAccountPersistency {
         }
         return account;
     }
+
+    @Override
+    public Account getByUsrName(String username) throws RemoteException {
+        EntityManager entityManager = null;
+        Account account=null;
+        try {
+            entityManager = EntityManagerUtil.getEntityManager();
+            account = (Account) entityManager.createQuery("SELECT a from Account a where a.username = :usrn")
+                    .setParameter("usrn", username)
+                    .getSingleResult();
+        }catch (NoResultException e){
+            System.out.println("No result...");
+        }catch(RollbackException e){
+            System.out.println("Cannot read...");
+        }
+        return account;
+    }
+
+
 
     public void insert(Account account){
         EntityManager entityManager = null;

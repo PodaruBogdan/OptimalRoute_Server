@@ -7,6 +7,7 @@ import java.util.List;
 public interface IAccountPersistency extends Remote {
     List<Account> getAll() throws RemoteException;
     Account getById(int id) throws RemoteException;
+    Account getByUsrName(String username) throws RemoteException;
     void insert(Account account) throws RemoteException;
     void update(Account account) throws RemoteException;
     void delete(int id) throws RemoteException;

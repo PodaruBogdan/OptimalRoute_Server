@@ -69,7 +69,7 @@ public class ServerMain implements Runnable {
 
 
 
-            //accountPersistency.insert(new Account.AccountBuilder().username("bogdan").pswd("1234").role("admin").build());
+            accountPersistency.insert(new Account.AccountBuilder().username("bogdan").pswd("1234").role("admin").build());
 
             //for tests
             ///StationNode s1 = stationNodePersistency.getById(1);
