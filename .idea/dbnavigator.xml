@@ -31,7 +31,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="14074d88-5ada-4470-af94-42fb026a09e0">
-      <console name="OptimalRouteConnection" type="STANDARD" schema="optimal_route" session="Main"><![CDATA[select * from neighbors;
+      <console name="OptimalRouteConnection" type="STANDARD" schema="optimal_route" session="Main">select * from neighbors;
 select * from stations;
 select * from blpt;
 select * from buslines;
@@ -41,7 +41,7 @@ drop table stations;
 drop table blpt;
 drop table neighbors;
 drop table buslines;
-drop table busline_list;]]></console>
+drop table busline_list;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

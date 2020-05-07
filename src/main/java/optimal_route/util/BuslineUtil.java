@@ -1,3 +1,5 @@
+package optimal_route.util;
+
 import optimal_route.contract.StationNode;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;

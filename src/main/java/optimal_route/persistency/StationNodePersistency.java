@@ -1,5 +1,8 @@
+package optimal_route.persistency;
+
 import optimal_route.contract.IStationNodePersistency;
 import optimal_route.contract.StationNode;
+import optimal_route.util.EntityManagerUtil;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
