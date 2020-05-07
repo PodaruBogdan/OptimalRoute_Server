@@ -110,6 +110,7 @@ public class ServerMain implements Runnable {
         ObjectOutputStream oos = null;
         try {
             socket = serverSocket.accept();
+            //
             ois = new ObjectInputStream(socket.getInputStream());
             oos = new ObjectOutputStream(socket.getOutputStream());
         } catch (IOException e) {
