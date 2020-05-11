@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="14074d88-5ada-4470-af94-42fb026a09e0">
-        <schema name="optimal_route" object-types="table, view" />
+        <schema name="optimal_route" object-types="view, table" />
       </connection>
     </loaded-nodes>
   </component>
